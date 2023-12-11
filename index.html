@@ -1,0 +1,372 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Clon Tuenti 2023</title>
+    <link rel="stylesheet" href="./style.css">
+    <script src="https://kit.fontawesome.com/c58c6cbca2.js" crossorigin="anonymous"></script>
+  </head>
+  <body>
+    <header class="header-main">
+      <nav class="navbar">
+        <div class="nav-left">
+          <a href="#">
+            <h1 class="logo">Tuenti</h1>
+          </a>
+          <label for="btnNavbarToggle" class="btn-navbar-toggle">
+            <i class="fa-solid fa-bars"></i>
+          </label>
+          
+          <input type="checkbox" id="btnNavbarToggle">
+          <ul class="nav-list">
+            <li class="nav-item"><a class="nav-link active" href="#">Inicio</a></li>
+            <li class="nav-item"><a class="nav-link" href="#">Perfil</a></li>
+            <li class="nav-item"><a class="nav-link" href="#">Mensajes <span class="msg-notif">2</span></a></li>
+            <li class="nav-item"><a class="nav-link" href="#">Gente</a></li>
+            <li class="nav-item"><a class="nav-link" href="#">Videos</a></li>
+            <li class="nav-item"><a class="nav-link" href="#">Juegos</a></li>
+          </ul>
+  
+          <form>
+            <search class="search-group">
+              <input class="input-search" type="search" placeholder="Buscar...">
+              <button class="search-icon" type="submit"><i class="fa-solid fa-magnifying-glass"></i></button>
+            </search>
+          </form>
+          <a href="#" class="upload-btn"><span class="hidden-md">Subir fotos</span> <i class="fa-solid fa-circle-up"></i></a>
+        </div>
+
+        <ul class="nav-list-secondary">
+          <li class="nav-item hidden-md"><a class="nav-link" href="#">Mi cuenta</a></li>
+          <li class="nav-item hidden-md"><a class="nav-link" href="#">Salir</a></li>
+          <li>
+            <a href="#">
+              <img class="user-avatar-xs" src="./img/avatar.jpg" alt="Avatar usuario">
+            </a>
+          </li>
+        </ul>
+      </nav>
+    </header>
+
+    <main class="main-content">
+
+      <aside class="aside-left">
+        <section class="user-panel">
+          <div class="info-user">
+            
+            <img class="avatar-user" src="./img/avatar.jpg" alt="Avatar usuario">
+            
+            <div class="user-chart">
+              <a href="#" class="user-name">CoalsPlay</a>
+              <p class="views-profile"><i class="fa-solid fa-chart-simple"></i> <span class="num-views">69</span> visitas a tu perfil</p>
+            </div>
+          </div>
+
+          <div class="notifications">
+            <a href="#">
+              <span class="new-notification"><i class="fa-solid fa-envelope"></i> 2 mensajes privados</span>
+            </a>
+            <a href="#">
+              <span class="new-notification"><i class="fa-solid fa-user-plus"></i> 6 peticiones de amistad</span>
+            </a>
+            <a href="#">
+              <span class="new-notification"><i class="fa-solid fa-comment"></i> 28 comentarios</span>
+            </a>
+            <a href="#">
+              <span class="new-notification">
+                <i class="fa-solid fa-tag"></i> 3 etiquetas
+                <picture class="img-tag-container">
+                  <img class="img-tag" src="./img/bg.jpg" alt="Foto etiquetada">
+                  <img class="img-tag" src="./img/bg.jpg" alt="Foto etiquetada">
+                  <img class="img-tag" src="./img/bg.jpg" alt="Foto etiquetada">
+                </picture>
+              </span>
+            </a>
+            <a href="#">
+              <span class="new-notification"><i class="fa-regular fa-calendar"></i> 4 invitaciones a eventos</span>
+            </a>
+          </div>
+        </section>
+
+        <section class="invite-friends">
+          <header class="header-section">
+            <span>Invitar a tus amigos</span>
+          </header>
+
+          <span class="num-invitations"><strong>5</strong> invitaciones</span>
+          <form class="invitation-form">
+            <input type="email" placeholder="E-mail" class="input-invitation">
+            <button class="btn-invitation" type="submit">Invitar</button>
+          </form>
+
+        </section>
+        
+        <section>
+          <header class="header-section">
+            <span>Eventos patrocinados</span>
+          </header>
+
+          <div class="events-list">
+            <a href="#" class="event-info">
+              <img class="event-img" src="./img/bg.jpg" alt="Imagen de evento">
+              <p class="event-title">Evento Nº 1, blablablablabla
+                <span class="event-date">26 Oct</span> (169)
+              </p>
+            </a>
+
+            <a href="#" class="event-info">
+              <img class="event-img" src="./img/bg.jpg" alt="Imagen de evento">
+              <p class="event-title">Evento Nº 2, blablablablabla
+                <span class="event-date">26 Oct</span> (169)
+              </p>
+            </a>
+
+            <a href="#" class="event-info">
+              <img class="event-img" src="./img/bg.jpg" alt="Imagen de evento">
+              <p class="event-title">Evento Nº 3, blablablablabla
+                <span class="event-date">26 Oct</span> (169)
+              </p>
+            </a>
+          </div>
+
+        </section>
+
+        <section>
+          <header class="header-section">
+            <span>Calendario</span>
+            <a href="#" class="subtitle-header">
+              <i class="fa-regular fa-calendar"></i> Crear evento
+            </a>
+          </header>
+
+          <ul class="calendar-events">
+            <li class="pending-event">
+              <p class="remember-event"><span class="day-event">Hoy</span> no tienes ningún evento.</p>
+            </li>
+            <li class="pending-event">
+              <p class="remember-event"><span class="day-event">Mañana</span> no tienes ningún evento.</p>
+            </li>
+            <li class="pending-event">
+              <span class="day-event">Próximos 7 días</span>
+              <p class="event-title"><i class="fa-regular fa-calendar"></i> Evento Nº 3, blablablablabla
+                <span class="event-date">26 Oct</span> (169)
+              </p>
+            </li>
+            <li class="pending-event">
+              <span class="day-event">Futuros</span>
+              <p class="event-title"><i class="fa-regular fa-calendar"></i> Evento Nº 2, blablablablabla
+                <span class="event-date">26 Oct</span> (169)
+              </p>
+            </li>
+          </ul>
+        </section>
+      </aside>
+      
+      <!-- Middle -->
+      <div class="middle-col">
+
+        <section class="form-post-container">
+          
+          <form class="form-general-group">
+            <div class="arrow-textarea"></div>
+            <div class="textarea-group">
+              <i class="fa-solid fa-pencil"></i>
+              <textarea class="textarea-post" placeholder="Actualiza tu estado"></textarea>
+            </div>
+            <div class="btn-form-post">
+              <p class="last-state"><strong>Última actualización:</strong> huehuehuehuehuhe! <span class="time-state">hace 8 minutos</span></p>
+              <button type="submit" class="btn-post">Guardar</button>
+            </div>
+          </form>
+        </section>
+
+        <section class="timeline-friends-section">
+          <header class="header-timeline">
+            <span>Novedades de tus amigos</span>
+          </header>
+
+          <div class="timeline-friends">
+
+            <div class="post-friend-container">
+              <picture class="avatar-friend-container">
+                <div class="status-friend"></div>
+                <img class="avatar-friend" src="./img/avatar.jpg" alt="Avatar amigo">
+              </picture>
+              <div class="content-post-friend">
+                <p class="text-state"><a href="#" class="post-author">CoalsPlay</a> huehuehuehuehuhe!</p>
+                <span class="post-time">hace 8 minutos</span>
+                <span class="post-notif"><i class="fa-solid fa-comment"></i> 2 comentarios</span>
+              </div>
+            </div>
+
+            <div class="post-friend-container">
+              <picture class="avatar-friend-container">
+                <div class="status-friend"></div>
+                <img class="avatar-friend" src="./img/avatar.jpg" alt="Avatar amigo">
+              </picture>
+              <div class="content-post-friend">
+                <p class="text-state"><a href="#" class="post-author">CoalsPlay</a> oLa k AsEis Mi GnTe :$</p>
+                <span class="post-time">hace 3 horas</span>
+                <p class="friend-comment"><span class="post-notif"><i class="fa-solid fa-comment"></i> 1 comentario</span> k diSe Mi Niño <span class="author-comment">de Frijolito69</span></p>
+              </div>
+            </div>
+
+            <div class="post-friend-container">
+              <picture class="avatar-friend-container">
+                <div class="status-friend"></div>
+                <img class="avatar-friend" src="./img/avatar.jpg" alt="Avatar amigo">
+              </picture>
+              <div class="content-post-friend">
+                <p class="text-state"><a href="#" class="post-author">CoalsPlay</a> uNas fotoS dEl Pako y yO</p>
+                <span class="post-time">hace 1 día</span>
+                <p class="uploaded-photos"><span class="post-notif"><i class="fa-solid fa-camera"></i> 2 fotos subidas</span>
+                  <picture class="uploaded-gallery">
+                    <a href="#">
+                      <img src="./img/bg.jpg" alt="Foto subida 1">
+                    </a>
+                    <a href="#">
+                      <img src="./img/bg.jpg" alt="Foto subida 2">
+                    </a>
+                  </picture>
+                </p>
+              </div>
+            </div>
+
+            <div class="post-friend-container">
+              <picture class="avatar-friend-container">
+                <div class="status-friend"></div>
+                <img class="avatar-friend" src="./img/avatar.jpg" alt="Avatar amigo">
+              </picture>
+              <div class="content-post-friend">
+                <p class="text-state"><a href="#" class="post-author">CoalsPlay</a></p>
+                <span class="post-time">hace 2 días</span>
+                <span class="post-notif"><i class="fa-solid fa-user"></i> 3 amigos</span>
+              </div>
+            </div>
+
+            <div class="post-friend-container">
+              <picture class="avatar-friend-container">
+                <div class="status-friend"></div>
+                <img class="avatar-friend" src="./img/avatar.jpg" alt="Avatar amigo">
+              </picture>
+              <div class="content-post-friend">
+                <p class="text-state"><a href="#" class="post-author">CoalsPlay</a> . y si me liO</p>
+                <span class="post-time">hace 3 días</span>
+              </div>
+            </div>
+
+            <div class="post-friend-container">
+              <picture class="avatar-friend-container">
+                <div class="status-friend"></div>
+                <img class="avatar-friend" src="./img/avatar.jpg" alt="Avatar amigo">
+              </picture>
+              <div class="content-post-friend">
+                <p class="text-state"><a href="#" class="post-author">CoalsPlay</a> m descarge poKemOn en EmuLe pero se yama poLLemon y empiesa un pco rarO</p>
+                <span class="post-time">hace 5 días</span>
+              </div>
+            </div>
+
+            <div class="post-friend-container">
+              <picture class="avatar-friend-container">
+                <div class="status-friend"></div>
+                <img class="avatar-friend" src="./img/avatar.jpg" alt="Avatar amigo">
+              </picture>
+              <div class="content-post-friend">
+                <p class="text-state"><a href="#" class="post-author">CoalsPlay</a> mañana stamos en 2010 mis LoCoOs</p>
+                <span class="post-time">hace 1 semana</span>
+              </div>
+            </div>
+
+          </div>
+        </section>
+
+      </div>
+      <!-- End middle -->
+
+      <!-- Aside right -->
+      <aside class="aside-right">
+
+        <section class="add-friends">
+          <header class="header-section">
+            <span>Añadir amigos</span>
+          </header>
+
+          <p class="descript-section">¿Amigos en Messenger o Yahoo!?</p>
+          
+            <a class="btn-search-friend">
+              <i class="fa-solid fa-magnifying-glass"></i>
+              <span>Buscar amigos</span>
+            </a>
+
+        </section>
+
+        <section class="chat-list">
+          <header class="header-section-chat">
+            <div class="title-chat"><div class="status-user"></div> Chat<span class="num-onlines">(10)</span></div>
+            <a href="#" class="subtitle-header">
+              <i class="fa-solid fa-gear"></i> Ajustes
+            </a>
+          </header>
+
+          <div class="users-online-container">
+            <form class="search-group">
+                <input class="input-search-friends" type="search" placeholder="Buscar amigo">
+                <button class="search-icon" type="submit"><i class="fa-solid fa-magnifying-glass"></i></button>
+            </form>
+
+            <ul class="users-online-list">
+              <li class="user-on-cont">
+                <div class="status-user"></div> 
+                <a class="user-on" href="#">CoalsPlay</a>
+              </li>
+              <li class="user-on-cont">
+                <i class="fa-solid fa-video"></i> 
+                <a class="user-on" href="#">CoalsPlay</a>
+              </li>
+              <li class="user-on-cont">
+                <div class="status-user"></div> 
+                <a class="user-on" href="#">CoalsPlay</a>
+              </li>
+              <li class="user-on-cont">
+                <div class="status-user"></div> 
+                <a class="user-on" href="#">CoalsPlay</a>
+              </li>
+              <li class="user-on-cont">
+                <i class="fa-solid fa-video"></i> 
+                <a class="user-on" href="#">CoalsPlay</a>
+              </li>
+              <li class="user-on-cont">
+                <div class="status-user"></div> 
+                <a class="user-on" href="#">CoalsPlay</a>
+              </li>
+              <li class="user-on-cont">
+                <div class="status-user"></div> 
+                <a class="user-on" href="#">CoalsPlay</a>
+              </li>
+              <li class="user-on-cont">
+                <i class="fa-solid fa-video"></i> 
+                <a class="user-on" href="#">CoalsPlay</a>
+              </li>
+              <li class="user-on-cont">
+                <div class="status-user"></div> 
+                <a class="user-on" href="#">CoalsPlay</a>
+              </li>
+              <li class="user-on-cont">
+                <div class="status-user"></div> 
+                <a class="user-on" href="#">CoalsPlay</a>
+              </li>
+            </ul>
+
+          </div>
+        </section>
+
+        <footer class="footer-copy">
+          <strong>Tuenti Clon 2023 &copy;</strong> Desarrollado con HTML y CSS por: <a href="#">CoalsPlay</a>
+        </footer>
+
+      </aside>
+    </main>
+
+  </body>
+</html>
